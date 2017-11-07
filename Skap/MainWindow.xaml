@@ -9,7 +9,7 @@
     <Grid>
         <StackPanel>
             <Button Height="30" Content="Add" x:Name="Addd" Click="Addd_Click" />
-            <ListView x:Name="MistView" Height="608"/>
+            <ListView x:Name="MistView" Height="608" SelectionChanged="MistView_SelectionChanged"/>
         </StackPanel>
     </Grid>
 </Window>

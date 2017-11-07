@@ -33,8 +33,6 @@ namespace Skap
 
         public async Task GetUserListAsync()
         {
-            try
-            {
                 string url = "https://student.sps-prosek.cz/~sevcima14/4ITB/skapp/dotaz.php";
                 var client = new RestClient(url);
                 var request = new RestRequest("resource/{id}", Method.POST);
@@ -42,18 +40,18 @@ namespace Skap
                 IRestResponse response = client.Execute(request);
                 IParser parser = new JsonParse();
                 MistView.ItemsSource = await parser.ParseStringAsync<List<User>>(response.Content);
-            }
-            catch
-            {
-                MessageBox.Show("Problém s připojením!");
-            }
         }
 
         private void Addd_Click(object sender, RoutedEventArgs e)
         {
             NavigationWindow windowss = new NavigationWindow();
-            windowss.Source = new Uri("Adde.xaml", UriKind.Relative);
+            windowss.Source = new Uri("Added.xaml", UriKind.Relative);
             windowss.Show();
+        }
+
+        private void MistView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

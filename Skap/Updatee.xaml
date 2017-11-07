@@ -1,0 +1,17 @@
+﻿<Window x:Class="Skap.Updatee"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Skap"
+        mc:Ignorable="d"
+        Title="Updatee" Height="400" Width="400">
+    <Grid>
+        <Frame x:Name="_mainFrame3"/>
+        <TextBox x:Name="word2" HorizontalAlignment="Left" Height="23" Margin="212,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="85,10,0,0" TextWrapping="Wrap" Text="Editovat slovo" VerticalAlignment="Top" Height="57" Width="237" FontSize="36"/>
+        <Label Content="Slovo" HorizontalAlignment="Left" Margin="90,107,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Button x:Name="editovat" Content="Editovat slovo v databázi" HorizontalAlignment="Center" VerticalAlignment="Center" Click="editovat_Click"/>
+        <TextBox x:Name="id_delia" HorizontalAlignment="Left" Height="23" Margin="175,545,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>

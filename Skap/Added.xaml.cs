@@ -10,22 +10,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 using RestSharp;
 using Skap.Entity;
+using Newtonsoft.Json;
+using Skap.Jsson;
 
 namespace Skap
 {
     /// <summary>
-    /// Interakční logika pro Adde.xaml
+    /// Interakční logika pro Added.xaml
     /// </summary>
-    public partial class Adde : Window
+    public partial class Added : Page
     {
-        public Adde()
+        public Added()
         {
             InitializeComponent();
         }
-
         private void RUN()
         {
             User us = new User();
@@ -43,7 +45,7 @@ namespace Skap
         private void pridat_Click(object sender, RoutedEventArgs e)
         {
             RUN();
-            MessageBox.Show("Slovo přidáno do databáze!");
+            MessageBox.Show("Slovo přidáno do databáze");
 
         }
     }
