@@ -51,7 +51,9 @@ namespace Skap
 
         private void Addd_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationWindow windowss = new NavigationWindow();
+            windowss.Source = new Uri("Adde.xaml", UriKind.Relative);
+            windowss.Show();
         }
     }
 }

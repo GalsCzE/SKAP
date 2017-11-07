@@ -13,7 +13,7 @@ namespace Skap.Entity
 
             public override string ToString()
             {
-            return ID + " " + slovo;
+            return "ID = "+ ID + " " + slovo;
             }
         }
 }
