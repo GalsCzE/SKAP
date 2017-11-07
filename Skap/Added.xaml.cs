@@ -38,8 +38,9 @@ namespace Skap
             var request = new RestRequest(Method.POST);
             request.AddHeader("cache-contorl", "no-cache");
             request.AddHeader("content-type", "application/json");
-            request.AddParameter("application/json", Newtonsoft.Json.JsonConvert.SerializeObject(us), ParameterType.RequestBody);
+            request.AddParameter("application/json", JsonConvert.SerializeObject(us), ParameterType.RequestBody);
             IRestResponse response = client.Execute(request);
+            
         }
 
         private void pridat_Click(object sender, RoutedEventArgs e)
